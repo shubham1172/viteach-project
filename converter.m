@@ -1,6 +1,6 @@
 % Converts csv into mat data file
 clc; clear all;
-raw = csvread("test.csv");
+raw = csvread("school.csv");
 X = raw(:,7)(2:end);
 Y = raw(:,8)(2:end);
 Z = raw(:,6)(2:end);
@@ -19,5 +19,5 @@ for i = 1:size(X)
   end
 end
 disp(k);
-data = [XX YY ZZ]
+data = [XX YY ZZ];
 save('location.mat','data')
